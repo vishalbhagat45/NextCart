@@ -1,9 +1,9 @@
 {
-  "name": "whatbytes-store",
+  "name": "NextCart-store",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build":"CI='' npm run build",
     "start": "next start",
     "lint": "next lint"
   },
