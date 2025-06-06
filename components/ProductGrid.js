@@ -1,17 +1,20 @@
 import ProductCard from './ProductCard';
-
 export default function ProductGrid() {
   const mockProducts = [
-    { id: 1, title: 'Samsung', price: 19999 },
-    { id: 2, title: 'Shoes', price: 1999 },
-    { id: 3, title: 'Headphones', price: 2999 },
-    { id: 4, title: 'T-shirt', price: 999 },
-    { id: 5, title: 'Digital Camera', price: 7999 },
-    { id: 6, title: 'IPhone 12', price: 69999 }
+    { id: 1, title: 'Samsung', price: 19999, imageSrc:"/images/samsung.avif"},
+    { id: 2, title: 'Shoes', price: 1999, imageSrc:"/images/puma.jpg"},
+    { id: 3, title: 'Headphones', price: 2999,imageSrc:"/images/headphone.jpeg"},
+    { id: 4, title: 'T-shirt', price: 999,imageSrc:"/images/tshirt.jpg" },
+    { id: 5, title: 'Digital Camera', price: 7999,imageSrc:"/images/camera.jpeg"},
+    { id: 6, title: 'Bag', price: 1499,imageSrc:"/images/bag.jpg"},
+    { id: 7, title: 'Laptop', price: 59999,imageSrc:"/images/laptop.jpeg"},
+    { id: 8, title: 'Watch', price: 2999,imageSrc:"/images/watch.jpg"},
+    { id: 9, title: 'Sunglass', price: 599,imageSrc:"/images/sunglass.avif"},
+    { id: 10, title: 'IPhone 12', price: 69999,imageSrc:"/images/iphone.webp"}
   ];
 
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 flex-1">
+    <section className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 p-8">
       {mockProducts.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}
